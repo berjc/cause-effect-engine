@@ -26,8 +26,8 @@ def print_path(path):
   Argument:
     path <[ConceptNode,]> : List of concept nodes to print.
   """
-  print 'Source Cause %s\'%s\'%s' % (OKGREENC, path[0].concept, ENDC)
+  print '\n  Source Cause %s\'%s\'%s' % (OKGREENC, path[0].concept, ENDC)
   for concept in path[1:-1]:
-    print '  %sleads to%s %s' % (OKBLUEC, ENDC, concept)
-  print 'Sink Effect %s\'%s\'%s' % (OKGREENC, path[-1].concept, ENDC)
+    print '    %sleads to%s %s' % (OKBLUEC, ENDC, concept)
+  print '  Sink Effect %s\'%s\'%s\n' % (OKGREENC, path[-1].concept, ENDC)
 
